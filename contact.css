@@ -1,0 +1,111 @@
+#logo{
+  position: top;
+}
+
+table {
+  text-align: center;
+}
+
+/* Add a black background color to the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #008e8c;
+    border: 3px solid black;
+    border-radius: 2px;
+}
+
+/* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav td:hover {
+  background-color: #005e5c;
+}
+
+/* Style the "active" element to highlight the current page */
+.topnav a.active {
+    background-color: #005e5c;
+    color: white;
+}
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+    .topnav a {
+        float: none;
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+}
+
+header {
+  background-color: rgba(255,255,255,1);
+  background-position: top;
+  background-size: 20px;
+}
+
+body {
+  text-align: center;
+  background-image: url("UIAM.jpg");
+  background-repeat: repeat-y;
+  background-position: top;
+  background-size: 100%;
+  height: 100%;
+  width: 100%;
+}
+
+.content {
+  background-color: rgba(234, 237, 242, 0.5);
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+.paragraph{
+  position: relative;
+  float: left;
+  width: 40%;
+  margin-left: 3px;
+  margin-right: 30px;
+}
+
+.join{
+  position: relative;
+  float: right;
+  width: 40%;
+  height: 100px;
+  margin-left: 3px;
+  margin-right: 30px;
+}

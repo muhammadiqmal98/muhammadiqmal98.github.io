@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>IIUM Sports Online-Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="register.css">
+  </head>
+  <body>
+    <header>
+      <div id=header>
+        <div id="logo">
+          <img src="logo.jpg" style="width:300px;height:170px" >
+        </div>
+
+        <table border="1" align="center" class="topnav">
+          <tr>
+            <td><a href="home.html">Home</a></td>
+            <td><a href="about.html">About</a></td>
+            <td><a href="achievement.html">Achievement</a></td>
+            <td><a class="active" href="#Register">Register</a></td>
+            <td><a href="calendar.html">Calendar</a></td>
+            <td><a href="map.html">Map</a></td>
+            <td><a href="contact.html">Contact</a></td>
+          </tr>
+    </header>
+<form action="response.html" method="get">
+<table border="0" align="center" class="content">
+    <tr>
+      <td width="750">
+        <br>Registration Form
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>Full Name</p>
+        <input type="text" name="name" placeholder="Your name">
+        <br>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>Matric Number</p>
+        <input type="number" name="matric no" placeholder="Your matric no">
+      </td>
+    </tr>
+    <tr>
+      <td class="custom-select" style="width:300px;">
+        <p>Select sport</p>
+        <select>
+          <option value="0">Select sports</option>
+          <option value="1">Football</option>
+          <option value="2">Rugby</option>
+          <option value="3">Hockey</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>Experience<br><span class="details">Yes - for experienced player    ||    No - for amateur player</span></p>
+        <input type="radio" name="yes" value="1">Yes<br>
+        <input type="radio" name="no" value="2">No<br>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>Email<br><span class="details">All details will be send via email</span></p>
+        <input type="text" name="email" placeholder="Your email">
+      </td>
+    </tr>
+    <tr></tr>
+    <tr>
+      <td>
+        <br><button class="button" type="submit" name="submit_btn">Submit</button>
+      </td>
+    </tr>
+</table>
+  </body>
+</html>
