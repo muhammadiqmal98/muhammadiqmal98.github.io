@@ -1,1 +1,188 @@
-My resume
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style media="screen">
+
+    body {
+      margin: 0px;
+      background-color:#FFE4B5;
+    }
+
+    nav {
+      float: right;
+      width: 20%;
+      height: 500px;
+      background-color: #FFE4B5;
+    }
+
+    main {
+
+    }
+
+    footer {
+      /* clear: */
+    }
+
+    .achievements, .about {
+      float: left;
+      width: 50%;
+    }
+
+    .slideshow-container{
+      width: 20%;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+
+    h1 {
+      font-size: 30px;
+      font-style: oblique;
+      color: blue;
+    }
+
+    </style>
+  </head>
+  <body>
+
+    <nav>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="img2.jpeg" width="200px" height="250px;">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="img1.jpeg" width="200px" height="250px;">
+        </div>
+        <div align="center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="details">
+        <h1>Biodata</h1>
+        <ul>
+          <li>Name: Muhammad Iqmal Bin Othman</li>
+          <li>Email: muhammad.iqmal01@gmail.com</li>
+          <li>Date of Birth: 01/06/1998</li>
+          <li>Bachelor of Computer Science</li>
+        </ul>
+      </div>
+
+      <h1>Educational Background</h1>
+      <ul>
+        <li><p><strong>Primary School: Sekolah Kebangsaan Taman Tasik</strong></p>
+        Registered in SK Taman Tasik from Standard 1 to Standard 6. Joined lots of co-curricular activities such as marching and sports.
+        Passed the UPSR with 5As</li>
+        <li><p><strong>Secondary School: Sekolah Menengah Kebangsaan Taman Tasik / Sekolah Menengah Sains Dungun</strong></p>
+        Registered to SMK Taman Tasik for my lower level, passed the PMR with 7As and 1B. Transferred to a boarding school,
+        SMS Dungun to complete my highschool<br> life. Joined lots of activities such as camps, sports, and academic competitions.
+        Pure Science stream student, finished highschool by scoring 9As in SPM.</li>
+        <li><p><strong>College: International Islamic University Malaysia</strong></p>
+        Applied for Engineering for IIUM, but fell short and transferred to Kuliyyah of Information and Communications Technology.<br>
+        Fell in love with technologies and start to love to work with computers. Majoring in Bachelor of Computer Science.</li>
+      </ul>
+
+      <div class="no1">
+        <div class="achievements">
+          <h1>Achievements</h1>
+          <ul>
+            <li>Placed third in basketball for Hari Kecemerlangan SBP Nasional</li>
+            <li>Placed second in basketball for MPPD during my upper level</li>
+            <li>Joined National Symposium 2018 at Kelantan</li>
+            <li>Joined multiple camps held by Terengganu from Form 4 to Form  5</li>
+          </ul>
+        </div>
+
+        <div class="work">
+          <h1>Voluntary works</h1>
+          <ul>
+            <li>Sub-committee for KICT Fest 18</li>
+            <li>Sub-committee for FYP KICT</li>
+            <li>Member of ICTSS as an Exco in Spritual and Islamization</li>
+          </ul>
+        </div>
+        <br>
+      </div>
+
+      <div class="no2">
+        <div class="about">
+          <h1>About Me</h1>
+          <ul>
+            <li>Love to hear songs</li>
+            <li>Love to travels</li>
+            <li>Organised</li>
+            <li>Neat</li>
+            <li>Always on-time</li>
+            <li>Hardworking</li>
+            <li>Responsible</li>
+        </div>
+
+        <div class="skills">
+          <h1>Skills</h1>
+          <ul>
+            <li>C and C++</li>
+            <li>Java</li>
+            <li>HTML and css</li>
+            <li>Bilingual - Bahasa and English</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </body>
+
+  <script>
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+  </script>
+</html>
